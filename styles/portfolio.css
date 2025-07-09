@@ -12,8 +12,16 @@
     color: #FD6E0A;
 }
 
+.dark-1 {
+    color: #181818;
+}
+
 .dark-2 {
     color: #474747;
+}
+
+.dark-3 {
+    color: #757575;
 }
 
 .btn-primary {
@@ -24,6 +32,25 @@
     padding: 18px 35px;
     border: none;
     border-radius: 5px;
+}
+
+.btn-secondary {
+    background-color: #FFFFFF;
+    color: #FD6E0A;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 18px 35px;
+    border: 2px solid #FD6E0A;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+
+/* Header */
+.header {
+    background-image: url('../images/developer.png'), url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
 }
 
 
@@ -53,4 +80,38 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-size: 20px;
+}
+
+
+/* Banner Styles */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 200px;
+}
+
+.banner-content {
+    max-width: 585px;
+    max-height: 356px;
+}
+
+.banner-greetings {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-title {
+    font-size: 85px;
+    font-weight: bold;
+}
+
+.banner-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.banner-profile-picture {
+    width: 584px;
+    height: 676px;
 }
