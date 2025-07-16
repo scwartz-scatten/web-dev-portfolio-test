@@ -170,10 +170,16 @@
                 <input type="text" placeholder="Your Name" class="footer-text-input">
                 <input type="email" placeholder="Your Email">
                 <textarea placeholder="Your Message"></textarea>
-                <button type="submit" class="btn-primary">Submit</button>
+                <button onclick="submission()" type="submit" class="btn-primary">Submit</button>
             </form>
         </div>
     </footer>
+
+    <script>
+        function submission() {
+            alert("Your message has been submitted! Thank you for your feedback. We will soon contact you :)");
+        }
+    </script>
 </body>
 
 </html>
