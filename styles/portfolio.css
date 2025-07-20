@@ -344,3 +344,158 @@ footer textarea {
 
 
 
+/* Responsive */
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    
+    .nav ul,
+    .banner,
+    .skills-container, 
+    .resume-container, 
+    .footer-section {
+        flex-direction: column;
+    }
+
+    .btn-hire-me {
+        white-space: nowrap;  /* Prevents text from wrapping, in this case button in one line */
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: 14px 25px;
+    }
+
+    .btn-secondary {
+        font-size: 16px;
+        padding: 14px 25px;
+    }
+
+    .header {
+        background-image: url('../images/header_bg.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding: 20px;
+        padding-bottom: 0;
+        /* background-image: none; */
+        width: 100%;
+        height: auto;
+    }
+
+
+    nav {
+        margin: 0px 200px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .banner {
+        justify-content: space-around;
+        margin-left: 20px;
+    }
+
+    .banner-content {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .banner-profile-picture {
+        /* display: none; */
+        margin-top: 60px;
+
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        padding: 50px 20px;
+    }
+
+    .about-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-description {
+        text-align: justify;
+    }
+
+
+
+    .resume {
+        width: 100%;
+        padding: 40px;
+        margin: 0 auto;
+        /* text-align: center; */
+        align-content: center;
+        align-items: center;
+    }
+
+    .resume-title {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    
+    .footer-column {
+        padding: 20px;
+    }
+
+    .footer-section {
+        padding: 20px;
+        gap: 100px;
+        width: 100%;
+    }
+
+    .footer-description {
+        width: 80%;
+        /* margin: 0 auto; */
+    }
+
+    footer input[type="text"], input[type="email"]{
+        width: calc(100% - 150px);
+    }
+
+    footer textarea {
+        width: calc(100% - 150px);
+    }
+}
+
+
+
+
+
+/* Tablet Specific Media Queries */
+
+@media screen and (max-width: 768px) {
+    
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .banner-content {
+        max-width: 100%;
+    }
+
+    .banner-profile-picture {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
